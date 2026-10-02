@@ -1,0 +1,30 @@
+RUN INSTRUCTIONS:
+
+To run you must add a .env file to the project in the root folder
+The file should look something like this:
+
+DB_HOST=host
+DB_PORT=port
+DB_NAME=databaseName
+DB_TEST_NAME=databaseNameTest
+DB_USER=user
+DB_PASSWORD=yourPassword
+SPRING_PROFILE=dev
+
+In the frontend folder you should also add a .env file looking like:
+
+VITE_API_URL=http://hostname
+
+when running on web should run add a .env.properties file in the frontend folder as:
+
+VITE_API_URL=website URL
+
+
+PICKED  ADDITIONS:
+I have added both padgination and searching to my project.
+
+CONTRACT LOGIC:
+A contract will have 5 feilds: id, employee, contractType, startDate and endDate.
+
+Using the employee field the contract will be able to find all contracts an employee has.
+The startDate and endDate fields can find which contract is active and ensure an employee has no overlapping contracts.
