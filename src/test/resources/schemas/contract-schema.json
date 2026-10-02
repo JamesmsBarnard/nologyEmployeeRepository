@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "id": {"type": "integer"},
+        "employee": {"type": "object"},
+        "contractType": {"type": "object"},
+        "startDate": {"type": "string"},
+        "endDate": {"type": "string"}
+    },
+    "required": [
+        "id",
+        "employee",
+        "startDate",
+        "endDate"
+    ],
+    "additionalProperties": false
+}

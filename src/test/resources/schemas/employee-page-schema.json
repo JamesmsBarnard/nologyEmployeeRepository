@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+    "currentPage": { "type": "integer" },
+    "totalPages": { "type": "integer" },
+    "totalResults": { "type": "integer" },
+    "resultsPerPage": { "type": "integer" },
+    "nextPage": { "type": ["integer", "null"] },
+    "previousPage": { "type": ["integer", "null"] },
+    "data": { "type": "array", "items": { "$ref": "employee-schema.json" } }
+    },
+    "required": [
+    "currentPage",
+    "totalPages",
+    "totalResults",
+    "nextPage",
+    "previousPage",
+    "resultsPerPage",
+    "data"
+    ],
+    "additionalProperties": false
+}
